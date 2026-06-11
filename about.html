@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — TwinAnalytic</title>
+  <meta name="description" content="Learn about TwinAnalytic, our leadership team, our history, and how we are engineering the future using Building Information Modeling (BIM) and Digital Twins.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About Us — TwinAnalytic" />
+  <meta property="og:description" content="Learn about TwinAnalytic, our leadership team, our history, and how we are engineering the future using Building Information Modeling (BIM) and Digital Twins." />
+  <meta property="og:image" content="https://twinanalytic.com/assets/about_render.jpg" />
+  <meta property="og:url" content="https://twinanalytic.com/about.html" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-banner {
+      padding: 10rem 0 5rem 0;
+      background: radial-gradient(circle at 10% 20%, rgba(13, 17, 23, 0.95) 0%, rgba(10, 10, 10, 0.98) 90%), 
+                  repeating-linear-gradient(45deg, rgba(201, 168, 76, 0.03) 0px, rgba(201, 168, 76, 0.03) 2px, transparent 2px, transparent 10px);
+      border-bottom: 1px solid var(--border-gold);
+      text-align: center;
+    }
+    .page-banner h1 {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .page-banner p {
+      color: var(--color-gold);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+    @media(max-width: 992px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+    .timeline-container {
+      margin-top: 5rem;
+      position: relative;
+    }
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, var(--border-gold), transparent);
+      transform: translateX(-50%);
+    }
+    @media (max-width: 768px) {
+      .timeline-container::before { left: 20px; }
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-left: 50px;
+      }
+    }
+    .timeline-item:nth-child(even) .timeline-card {
+      grid-column: 2;
+    }
+    @media (max-width: 768px) {
+      .timeline-item:nth-child(even) .timeline-card {
+        grid-column: auto;
+      }
+    }
+    .timeline-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      border: 3px solid var(--bg-primary);
+      position: absolute;
+      left: 50%;
+      top: 1.5rem;
+      transform: translateX(-50%);
+      box-shadow: 0 0 10px var(--color-gold);
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      .timeline-dot { left: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="TwinAnalytic Logo" style="height: 38px; width: auto; border-radius: 4px; margin-right: 8px; vertical-align: middle;">
+        Twin<span>Analytic</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bim-viewer.html">BIM Viewer</a></li>
+        <li><a href="tools.html">Calculators</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <header class="page-banner">
+    <div class="container">
+      <p>Architects of Digital Reality</p>
+      <h1>About TwinAnalytic</h1>
+    </div>
+  </header>
+
+  <!-- WHO WE ARE SECTION -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-grid" style="margin-bottom: 6rem;">
+        <div class="about-img-container fade-up-init">
+          <img src="assets/about_render.jpg" alt="TwinAnalytic Premium Architectural Design render">
+        </div>
+        <div class="about-text fade-up-init">
+          <h3>Computational Craftsmanship</h3>
+          <p>TwinAnalytic stands at the intersection of luxury architectural design and cutting-edge digital twin technology. We design and coordinate projects ranging from high-rise office towers to massive structural transport grids, ensuring that physical structures remain optimized, secure, and predictable throughout their lifecycles.</p>
+          <p>By using Building Information Modeling (BIM) at Level 3, we allow all engineering design disciplines to interface in real-time, removing clashes and reducing construction material waste. Once structural execution is complete, our physical buildings transition into live digital twins, using real-time IoT sensor telemetry to feed continuous structural data back to dashboards.</p>
+          
+          <p class="about-tagline" style="margin-top: 1.5rem; font-style: italic; color: var(--color-gold);">Currently delivering our first flagship projects — documentation coming soon.</p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="section-header fade-up-init">
+        <h2><span>Our Pillars</span>Values Driving Our Innovation</h2>
+      </div>
+
+      <div class="values-grid">
+        <div class="glass-card fade-up-init">
+          <h4 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-gold);"><i class="fa-solid fa-cube" style="margin-right: 0.5rem;"></i> Absolute Precision</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">We model elements down to LOD 500, resolving structural clashes in the software phase to prevent expensive physical rework.</p>
+        </div>
+        <div class="glass-card fade-up-init">
+          <h4 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-gold);"><i class="fa-solid fa-seedling" style="margin-right: 0.5rem;"></i> Smart Sustainability</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">By testing materials and load parameters, we generate sustainable, material-efficient structural shapes that save resources.</p>
+        </div>
+        <div class="glass-card fade-up-init">
+          <h4 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-gold);"><i class="fa-solid fa-laptop-code" style="margin-right: 0.5rem;"></i> Dynamic Connectivity</h4>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">We fuse construction with software engineering, creating live, IoT-connected models that watch over building health continuously.</p>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="section-header fade-up-init" style="margin-top: 8rem; margin-bottom: 3rem;">
+        <h2><span>Our Evolution</span>History of Structural Technology</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card glass-card fade-up-init">
+            <h4 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-gold); margin-bottom: 0.5rem;">2024 — FOUNDED</h4>
+            <h3 style="font-family: var(--font-serif); font-weight: 400; margin-bottom: 1rem;">TwinAnalytic Established</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">TwinAnalytic established in Frankfurt, combining structural engineering expertise with digital twin technology to serve complex construction projects.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TEAM SECTION -->
+  <section class="section-padding" id="team">
+    <div class="container">
+      <div class="section-header fade-up-init">
+        <h2><span>The Minds Behind the Models</span>Executive Leadership</h2>
+        <p>Our leadership blends computational geometry, structural engineering, and luxury architecture design execution.</p>
+      </div>
+
+      <div class="team-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+        <div class="team-card fade-up-init" style="max-width: 380px;">
+          <div class="team-photo-wrap">
+            <img src="assets/team_ceo.jpg" alt="CEO MD. AHSAN HABIB ANIK" class="team-photo">
+          </div>
+          <h3>MD. AHSAN HABIB ANIK</h3>
+          <span class="team-role">Chief Executive Officer &amp; Founder</span>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 1rem; line-height: 1.6; text-align: justify; padding: 0 1rem;">
+            Ahsan is the founder of TwinAnalytic, bringing expertise in structural engineering and Building Information Modeling. He established the firm to bridge the gap between precision engineering and real-time digital intelligence in construction.
+          </p>
+          <div class="team-social">
+            <a href="https://linkedin.com/company/twinanalytic" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/twinanalytic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;" class="fade-up-init">
+        <p style="color: var(--text-secondary); font-size: 0.95rem; font-style: italic;">We are growing. Engineering and technology roles open — <a href="contact.html" style="color: var(--color-gold); text-decoration: underline;">contact us</a>.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top-gradient"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand">
+          <h3>Twin<span>Analytic</span></h3>
+          <p style="color: var(--color-gold); font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.8rem; margin-top: -0.5rem;">Construction &amp; Engineering</p>
+          <p>We combine engineering expertise with digital technologies to create safe, optimized, and reliable structures.</p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/company/twinanalytic" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/twinanalytic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><!-- TODO: add real URL --><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><!-- TODO: add real URL --><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#structural">Structural Engineering</a></li>
+            <li><a href="services.html#bim">BIM &amp; Digital Engineering</a></li>
+            <li><a href="services.html#support">Construction Support</a></li>
+            <li><a href="services.html#consultancy">Engineering Consultancy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Interactive</h3>
+          <ul class="footer-links">
+            <li><a href="beam-design.html">Beam Design Calculator</a></li>
+            <li><a href="tools.html">Column Design Calculator</a></li>
+            <li><a href="tools.html">Slab Spans Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 TwinAnalytic. All rights reserved. Engineering the Future. Digitally Twin.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Protocol</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

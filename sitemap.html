@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap — TwinAnalytic</title>
+  <meta name="description" content="View the full structural map of all pages and services provided by TwinAnalytic.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .page-banner {
+      padding: 10rem 0 4rem 0;
+      background: radial-gradient(circle at 10% 20%, rgba(13, 17, 23, 0.95) 0%, rgba(10, 10, 10, 0.98) 90%), 
+                  repeating-linear-gradient(45deg, rgba(201, 168, 76, 0.03) 0px, rgba(201, 168, 76, 0.03) 2px, transparent 2px, transparent 10px);
+      border-bottom: 1px solid var(--border-gold);
+      text-align: center;
+    }
+    .page-banner h1 {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .page-banner p {
+      color: var(--color-gold);
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    .sitemap-section {
+      padding: 4rem 0 8rem 0;
+      background-color: var(--bg-primary);
+    }
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+    @media (max-width: 992px) {
+      .sitemap-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .sitemap-grid { grid-template-columns: 1fr; }
+    }
+    .sitemap-col h3 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--color-gold);
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid rgba(251,251,251,0.05);
+      padding-bottom: 0.5rem;
+      font-weight: 400;
+    }
+    .sitemap-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .sitemap-links a {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      transition: var(--transition-quick);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .sitemap-links a:hover {
+      color: #fff;
+      padding-left: 0.3rem;
+    }
+    .sitemap-links a i {
+      font-size: 0.75rem;
+      color: var(--color-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="TwinAnalytic Logo" style="height: 38px; width: auto; border-radius: 4px; margin-right: 8px; vertical-align: middle;">
+        Twin<span>Analytic</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bim-viewer.html">BIM Viewer</a></li>
+        <li><a href="tools.html">Calculators</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-gold btn-sm">Get a Quote</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <header class="page-banner">
+    <div class="container">
+      <p>Crawling Index</p>
+      <h1>Website Sitemap</h1>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="sitemap-section">
+    <div class="container">
+      <div class="glass-card" style="padding: 4rem 3rem;">
+        <div class="sitemap-grid">
+          <!-- Col 1: Main Pages -->
+          <div class="sitemap-col">
+            <h3>Core Environment</h3>
+            <div class="sitemap-links">
+              <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home Portal</a>
+              <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Our Firm</a>
+              <a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services &amp; Pillars</a>
+              <a href="bim-viewer.html"><i class="fa-solid fa-chevron-right"></i> BIM Viewer Portal</a>
+              <a href="tools.html"><i class="fa-solid fa-chevron-right"></i> Calculators Index</a>
+              <a href="projects.html"><i class="fa-solid fa-chevron-right"></i> Project Portfolio</a>
+              <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Offices</a>
+              <a href="privacy.html"><i class="fa-solid fa-chevron-right"></i> Privacy Protocol</a>
+            </div>
+          </div>
+
+          <!-- Col 2: Services Detail -->
+          <div class="sitemap-col">
+            <h3>Services Detail</h3>
+            <div class="sitemap-links">
+              <a href="bim-modeling.html"><i class="fa-solid fa-chevron-right"></i> BIM Modeling</a>
+              <a href="structural-design.html"><i class="fa-solid fa-chevron-right"></i> Structural Analysis</a>
+              <a href="digital-twin.html"><i class="fa-solid fa-chevron-right"></i> Digital Twins</a>
+              <a href="project-management.html"><i class="fa-solid fa-chevron-right"></i> Project Management</a>
+              <a href="construction-supervision.html"><i class="fa-solid fa-chevron-right"></i> Site Supervision</a>
+              <a href="feasibility-cost.html"><i class="fa-solid fa-chevron-right"></i> Cost Sizing</a>
+              <a href="mep-engineering.html"><i class="fa-solid fa-chevron-right"></i> MEP Engineering</a>
+              <a href="3d-visualization.html"><i class="fa-solid fa-chevron-right"></i> 3D Rendering &amp; VR</a>
+            </div>
+          </div>
+
+          <!-- Col 3: Interactive Suite -->
+          <div class="sitemap-col">
+            <h3>Calculators Suite</h3>
+            <div class="sitemap-links">
+              <a href="beam-design.html"><i class="fa-solid fa-chevron-right"></i> Beam Design Calculator</a>
+              <a href="tools.html#panel-column"><i class="fa-solid fa-chevron-right"></i> Column Design Sizer</a>
+              <a href="tools.html#panel-slab"><i class="fa-solid fa-chevron-right"></i> Slab Thickness Calculator</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top-gradient"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand">
+          <h3>Twin<span>Analytic</span></h3>
+          <p style="color: var(--color-gold); font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.8rem; margin-top: -0.5rem;">Construction &amp; Engineering</p>
+          <p>We combine engineering expertise with digital technologies to create safe, optimized, and reliable structures.</p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/company/twinanalytic" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/twinanalytic" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><!-- TODO: add real URL --><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><!-- TODO: add real URL --><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#structural">Structural Engineering</a></li>
+            <li><a href="services.html#bim">BIM &amp; Digital Engineering</a></li>
+            <li><a href="services.html#support">Construction Support</a></li>
+            <li><a href="services.html#consultancy">Engineering Consultancy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Interactive</h3>
+          <ul class="footer-links">
+            <li><a href="beam-design.html">Beam Design Calculator</a></li>
+            <li><a href="tools.html">Column Design Calculator</a></li>
+            <li><a href="tools.html">Slab Spans Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 TwinAnalytic. All rights reserved. Engineering the Future. Digitally Twin.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Protocol</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
